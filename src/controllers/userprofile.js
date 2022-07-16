@@ -49,12 +49,12 @@ exports.getuserProfiles = async (req, res) => {
   }
 };
 
-exports.getProfile = async (req, res) => {
+exports.getuserProfile = async (req, res) => {
   try {
 
     const { id } = req.params;
 
-    const data = await profile.findOne({
+    const data = await userProfile.findOne({
       where: {
           id,
       },
@@ -77,4 +77,3 @@ exports.getProfile = async (req, res) => {
     });
   }
 };
-
