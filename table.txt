@@ -1,0 +1,3 @@
+npx sequelize-cli model:generate --name userProfile --attributes phoneNumber:string,user_profile:string,following:string,followers:string,idUser:integer
+npx sequelize-cli model:generate --name userRelation --attributes userRelation:string,status:string,idUser:integer 
+npx sequelize-cli model:generate --name user --attributes username:string,email:string,password:string
